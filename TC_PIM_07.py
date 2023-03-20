@@ -30,13 +30,13 @@ class Test_Employee_emergancy_contact_info:
         self.driver.find_element(by=By.XPATH, value=locators.Test_locators().city_loc).send_keys(data.Test_data().city)
         self.driver.find_element(by=By.XPATH, value=locators.Test_locators().state_loc).send_keys(data.Test_data().state)
         self.driver.find_element(by=By.XPATH, value=locators.Test_locators().post_code).send_keys(data.Test_data().code)
-        self.driver.find_element(by=By.XPATH, value=locators.Test_locators().country_loc).send_keys(data.Test_data().country)
+        self.driver.find_element(by=By.XPATH, value=locators.Test_locators().indian).click()
         self.driver.find_element(by=By.XPATH, value=locators.Test_locators().home).send_keys(data.Test_data().home_nm)
         self.driver.find_element(by=By.XPATH, value=locators.Test_locators().moblie).send_keys(data.Test_data().Mobile_nm)
         self.driver.find_element(by=By.XPATH, value=locators.Test_locators().work).send_keys(data.Test_data().work_nm)
         self.driver.find_element(by=By.XPATH, value=locators.Test_locators().work_mail).send_keys(data.Test_data().work_mail_d)
         self.driver.find_element(by=By.XPATH, value=locators.Test_locators().other_mail).send_keys(data.Test_data().other_mail_d)
-        self.driver.find_element(by=By.XPATH, value=locators.Test_locators().save_button2).send_keys(data.Test_data().city)
+        self.driver.find_element(by=By.XPATH, value=locators.Test_locators().save_button2).click()
         assert self.driver.title == 'OrangeHRM'
         print("Your detailes updated sucessfully! ")
         

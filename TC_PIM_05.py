@@ -32,7 +32,6 @@ class Test_Employee_Personal_details:
         self.driver.find_element(by=By.XPATH, value=locators.Test_locators().nick_name).send_keys(data.Test_data().Nk_name)
         self.driver.find_element(by=By.XPATH, value=locators.Test_locators().dr_lic_loc).send_keys(data.Test_data().licence_number)
         self.driver.find_element(by=By.XPATH, value=locators.Test_locators().expiry_date).send_keys(data.Test_data().date_lc)
-        sleep(2)
         self.driver.find_element(by=By.XPATH, value=locators.Test_locators().nationality).click()
         self.driver.find_element(by=By.XPATH, value=locators.Test_locators().indian).click()
         self.driver.find_element(by=By.XPATH, value=locators.Test_locators().marital_status).click()

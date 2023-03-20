@@ -5,7 +5,6 @@ from webdriver_manager.firefox import GeckoDriverManager
 from Test_locators import locators
 from Test_Data import data
 from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
 import pytest
 
@@ -40,5 +39,7 @@ class Test_Search_Textbox:
                 assert self.driver.title == 'OrangeHRM'
       except NoSuchElementException:
         print("login Unsucessful")
+        self.driver.quit()
+        
         
 

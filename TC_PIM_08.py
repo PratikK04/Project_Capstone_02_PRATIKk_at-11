@@ -39,7 +39,7 @@ class Test_Employee_Dependents_details:
            self.driver.find_element(by=By.XPATH, value=locators.Test_locators().search_inputbox).click()    
            sleep(2)
            self.wait.until(EC.element_to_be_clickable((By.XPATH, locators.Test_locators().edit_button)))
-           self.driver.find_element(by=By.XPATH, value=locators.Test_locators()().edit_button).click()
+           self.driver.find_element(by=By.XPATH, value=locators.Test_locators().edit_button).click()
            
            self.wait.until(EC.element_to_be_clickable((By.XPATH, locators.Test_locators().Dependent)))
            self.driver.find_element(by=By.XPATH, value=locators.Test_locators().Dependent).click()

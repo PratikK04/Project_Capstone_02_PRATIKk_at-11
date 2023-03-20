@@ -20,25 +20,23 @@ class Test_Admin_user_management:
         
     def test_adminpage(self,booting_function):
       try:     
-           self.wait.until(EC.element_to_be_clickable((By.NAME, locators.Test_locators().username_inputBox)))
-           self.driver.find_element(by=By.NAME, value=locators.Test_locators().username_inputBox).send_keys(data.Test_data().username)  
-           self.wait.until(EC.element_to_be_clickable((By.NAME, locators.Test_locators().password_inputBox)))
-           self.driver.find_element(by=By.NAME, value=locators.Test_locators().password_inputBox).send_keys(data.Test_data().password)
+           self.wait.until(EC.element_to_be_clickable((By.NAME, locators.Test_locators().username_locator)))
+           self.driver.find_element(by=By.NAME, value=locators.Test_locators().username_locator).send_keys(data.Test_data().username)  
+           self.wait.until(EC.element_to_be_clickable((By.NAME, locators.Test_locators().password_locator)))
+           self.driver.find_element(by=By.NAME, value=locators.Test_locators().password_locator).send_keys(data.Test_data().password)
           
-           self.wait.until(EC.element_to_be_clickable((By.XPATH, locators.Test_locators().LoginButton)))
-           self.driver.find_element(by=By.XPATH, value=locators.Test_locators().LoginButton).click()
+           self.wait.until(EC.element_to_be_clickable((By.XPATH, locators.Test_locators().login_button)))
+           self.driver.find_element(by=By.XPATH, value=locators.Test_locators().login_button).click()
            
-           self.wait.until(EC.element_to_be_clickable((By.XPATH, locators.Test_locators().Admin)))
-           self.driver.find_element(by=By.XPATH, value=locators.Test_locators().Admin).click()
+           self.wait.until(EC.element_to_be_clickable((By.XPATH, locators.Test_locators().admin)))
+           self.driver.find_element(by=By.XPATH, value=locators.Test_locators().admin).click()
            
-           self.wait.until(EC.element_to_be_clickable((By.XPATH, locators.Test_locators().usermanagement)))
-           self.driver.find_element(by=By.XPATH, value=locators.Test_locators().usermanagement).click() 
+           self.wait.until(EC.element_to_be_clickable((By.XPATH, locators.Test_locators().user_management)))
+           self.driver.find_element(by=By.XPATH, value=locators.Test_locators().user_management).click() 
            
            self.wait.until(EC.element_to_be_clickable((By.XPATH, locators.Test_locators().user)))
            self.driver.find_element(by=By.XPATH, value=locators.Test_locators().user).click()  
-           self.driver.execute_script("window.stop();");  
-           self.wait.until(EC.element_to_be_clickable((By.XPATH, locators.Test_locators().employee)))
-           self.driver.find_element(by=By.XPATH, value=locators.Test_locators().employee).send_keys(data.Test_data().employeename)                
+           self.driver.execute_script("window.stop();");                  
            self.driver.find_element(by=By.XPATH, value =locators.Test_locators().userrole).click()
            self.driver.find_element(by=By.XPATH, value=locators.Test_locators().admin_select).click()
            self.driver.find_element(by=By.XPATH, value=locators.Test_locators().Enable).click()

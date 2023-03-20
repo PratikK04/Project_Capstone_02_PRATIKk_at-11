@@ -8,13 +8,17 @@ class Test_locators():
     search_inputbox = '/html/body/div/div[1]/div[1]/aside/nav/div[2]/div/div/input'
     PIM_locator = '//*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[2]/a'
     Add_employee = '/html/body/div/div[1]/div[2]/div[2]/div/div[2]/div[1]/button'
+    search_button = '(//*[@class="oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space"])'
 
     #Admin select Locator
+    admin ='//*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a' 
+    user_management = '//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[1]/span'
+    user = '//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[1]/ul/li'
     userrole = '//*[@class="oxd-icon bi-caret-down-fill oxd-select-text--arrow"]'
     admin_select= "(//*[@role='listbox']//*[text()='Admin'])"
-    Enable = "(//*[@role='listbox']//*[text()='Enable'])"
+    Enable = "(//*[@role='listbox']//*[text()='Enabled'])"
     ESS_select ="(//*[@role='listbox']//*[text()='ESS'])"
-    disable = "(//*[@role='listbox']//*[text()='Admin'])"
+    disable = "(//*[@role='listbox']//*[text()='general.disabled'])"
 
     #Input locators for adding employee
     Name_inputbox = '/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[1]/div[1]/div/div/div[2]/div[1]/div[2]/input'
@@ -22,13 +26,7 @@ class Test_locators():
     save_button = '/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[2]/button[2]'
     personal_details = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/div/div[1]/div[2]/div[1]/a'
     
-     #input locators for user management
-    admin ='//*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a' 
-    user_management = '//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[1]/span'
-    user = '//*[@id="app"]/div[1]/div[1]/header/div[2]/nav/ul/li[1]/ul/li'
-    drop_down1 = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[2]/div/div[2]/div/div/div[2]/i'
-    drop_down2 = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[4]/div/div[2]/div/div/div[2]/i'
-
+    
     #PIM , creation of new user
     toggle_creat = '/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[2]/div/label/span'
     ep_namebox = '/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[1]/div[1]/div/div/div[2]/div[1]/div[2]/input'
@@ -52,7 +50,7 @@ class Test_locators():
     Blood_type ="(//*[@role='listbox']//*[text()='A+'])"
     save_btn1 = '/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[5]/button'
     save_btn2 = '/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[2]/div/form/div[2]/button'
-
+    edit_button = '(//*[@class="oxd-icon bi-pencil-fill"])'
     #PIM TC-06
     Contact_info = '/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[1]/div[2]/div[2]/a'
  
@@ -101,6 +99,8 @@ class Test_locators():
     work_no = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[2]/div/div[3]/div/div[2]/input'
     
     save_button3 = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[3]/button[2]'
+
+    exit_dob ='(//*[@class="oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space"])'
 
     #dependent Info
    
@@ -172,6 +172,7 @@ class Test_locators():
     drop_down = "//*[@role='listbox']"
 
 
+
     #salary Details locator
 
     pay_frequency = "(//*[@class='oxd-select-text-input'])[2]"
@@ -192,6 +193,8 @@ class Test_locators():
     
     save = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[5]/button[2]'
 
+    status_1= "(//*[@role='listbox']//*[text()='status 1'])"
+    
     #tax details locator 
     
     Tax  = 'Tax Exemptions'

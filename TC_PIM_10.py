@@ -32,13 +32,13 @@ class Test_Terminate_employee:
            self.driver.find_element(by=By.XPATH, value=locators.Test_locators().PIM_locator).click()
 
            self.wait.until(EC.element_to_be_clickable((By.XPATH, locators.Test_locators().ep_namebox)))
-           self.driver.find_element(by=By.XPATH, value=locators.Test_locators().ep_namebox).send_keys(data.Test_data().employeename)
+           self.driver.find_element(by=By.XPATH, value=locators.Test_locators().ep_namebox).send_keys(data.Test_data().ep_name)
            sleep(2)
            self.wait.until(EC.element_to_be_clickable((By.XPATH, locators.Test_locators().search_inputbox)))
            self.driver.find_element(by=By.XPATH, value=locators.Test_locators().search_inputbox).click()
 
            self.wait.until(EC.element_to_be_clickable((By.XPATH, locators.Test_locators().ep_namebox)))
-           self .driver.find_element(by=By.XPATH, value=locators.Test_locators().ep_namebox).send_keys(data.Test_data.employeename)
+           self .driver.find_element(by=By.XPATH, value=locators.Test_locators().ep_namebox).send_keys(data.Test_data.ep_name)
            sleep(3)
            self.wait.until(EC.element_to_be_clickable((By.XPATH, locators.Test_locators().search_inputbox)))
            self .driver.find_element(by=By.XPATH, value=locators.Test_locators().search_inputbox).click()     

@@ -31,7 +31,7 @@ class Test_Employee_list:
             for item in Menu_items:
              try:
                 self.driver.find_element(by=By.XPATH, value=locators.Test_locators().personal_details).click()
-                print("Mene option {a} present and Validated ".format(a=item))
+                print("Mene option {item} present and Validated ")
              except:
                 print('element {item} not found')
                 assert self.driver.title == 'OrangeHRM'        

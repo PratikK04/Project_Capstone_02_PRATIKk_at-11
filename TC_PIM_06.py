@@ -13,7 +13,7 @@ class Test_Employee_Contact_details:
         self.driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
         self.driver.get(data.Test_data().url)
         self.driver.maximize_window()
-        self.wait = WebDriverWait(self.driver, 10)
+        self.wait = WebDriverWait(self.driver, 20)
    def test_Login(self,booting_function):
        try:
         self.driver.find_element(by=By.NAME, value=locators.Test_locators().username_locator).send_keys(data.Test_data().username)
